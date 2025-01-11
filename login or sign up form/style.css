@@ -1,0 +1,129 @@
+body{
+    font-family: "Poppins", 'sans-serif';
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #c4c3ca;
+}
+
+a{
+    cursor: pointer;
+    transition: all 200ms linear;
+}
+
+a:hover{
+    text-decoration: none;
+}
+.link{
+    color: #c4c3ca  ;
+}
+.link:hover{
+    color: #ffeba7;
+}
+p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.7;
+}
+h4{
+    font-weight: 600;
+}
+h6 span{
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.section{
+    position: relative;
+    width: 100%;
+    display: block;
+}
+.full-height{
+    min-height: 100vh;
+}
+[type="checkbox"]{
+    position: absolute;
+    appearance: none;
+}
+.checkbox.checked+label,
+.checkbox:not(:checked)+label{
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 60px;
+    height: 16px;
+    background-color: #ffeba7;
+    border-radius: 8px;
+    padding: 0;
+    margin: 10px auto;
+    cursor: pointer;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.hidden {
+    display: none;
+}
+
+.page {
+    padding: 20px;
+    text-align: center;
+}
+
+.navigation {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.digital-clock {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: inline-block;
+}
+
+.hidden {
+    display: none;
+}
+
+.page {
+    padding: 20px;
+    text-align: center;
+}
+
+.navigation {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.digital-clock {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: inline-block;
+}
+
+.time {
+    font-size: 40px;
+}
+
+.week div {
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.week .active {
+    color: yellow;
+}
