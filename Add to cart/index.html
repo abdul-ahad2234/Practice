@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juice Paradise</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Shrek Juice!</h1>
+        <p>Discover the ultimate freshness and flavors in every sip.</p>
+    </header>
+    <div class="container">
+        <div class="juice-card">
+            <img src="images/orange juice.jpg" alt="Orange Juice">
+            <h3>Orange Juice</h3>
+            <p>Freshly squeezed oranges for a refreshing taste.</p>
+            <span class="price">$5.00</span>
+            <button class="add-to-cart" data-juice="Orange Juice">Add to Cart</button>
+        </div>
+        <div class="juice-card">
+            <img src="images/apple juice.webp" alt="Apple Juice">
+            <h3>Apple Juice</h3>
+            <p>Pure apple goodness in every sip.</p>
+            <span class="price">$6.00</span>
+            <button class="add-to-cart" data-juice="Apple Juice">Add to Cart</button>
+        </div>
+        <div class="juice-card">
+            <img src="images/mango juice.jpg" alt="Mango Juice">
+            <h3>Mango Juice</h3>
+            <p>Sweet and juicy mangoes blended to perfection.</p>
+            <span class="price">$7.00</span>
+            <button class="add-to-cart" data-juice="Mango Juice">Add to Cart</button>
+        </div>
+        <div class="juice-card">
+            <img src="images/berry juice.jpg" alt="Berry Juice">
+            <h3>Berry Juice</h3>
+            <p>A mix of berries for a burst of flavor.</p>
+            <span class="price">$8.00</span>
+            <button class="add-to-cart" data-juice="Berry Juice">Add to Cart</button>
+        </div>
+        <div class="juice-card">
+            <img src="images/pineapple juice.jpg" alt="Pineapple Juice">
+            <h3>Pineapple Juice</h3>
+            <p>Tropical pineapples for a tangy delight.</p>
+            <span class="price">$6.50</span>
+            <button class="add-to-cart" data-juice="Pineapple Juice">Add to Cart</button>
+        </div>
+        <div class="juice-card">
+            <img src="images/watermelon juice.jpg" alt="Watermelon Juice">
+            <h3>Watermelon Juice</h3>
+            <p>Refreshing watermelon for a cool treat.</p>
+            <span class="price">$5.50</span>
+            <button class="add-to-cart" data-juice="Watermelon Juice">Add to Cart</button>
+        </div>
+        <div class="juice-card">
+            <img src="images/Pomegranate juice.jpg" alt="Pomegranate Juice">
+            <h3>Pomegranate Juice</h3>
+            <p>Rich in antioxidants and flavor.</p>
+            <span class="price">$7.50</span>
+            <button class="add-to-cart" data-juice="Pomegranate Juice">Add to Cart</button>
+        </div>
+        <div class="juice-card">
+            <img src="images/grape juice.jpg" alt="Grape Juice">
+            <h3>Grape Juice</h3>
+            <p>A sweet and tangy grape experience.</p>
+            <span class="price">$6.00</span>
+            <button class="add-to-cart" data-juice="Grape Juice">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('.add-to-cart').on('click', function() {
+                const juiceName = $(this).data('juice');
+
+                $('#cart-items').append(`<li>${juiceName} <span class='remove'>Remove</span></li>`);
+
+                $("body").append(`<div class='notification'>${juiceName} added to cart!</div>`);
+
+                setTimeout(() => {
+                    $('.notification').fadeOut(500, function() {
+                        $(this).remove();
+                    });
+                }, 1500);
+            });
+
+            $(document).on('click', '.remove', function() {
+                $(this).parent().fadeOut(300, function() {
+                    $(this).remove();
+                });
+            });
+        });
+    </script>
+</body>
+</html>

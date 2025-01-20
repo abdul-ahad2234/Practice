@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Catering Services - Shrek Juices</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Catering Services</h1>
+        <p>Fresh, Healthy, and Refreshing Juices for Any Occasion!</p>
+        <a href="#get-quote" class="cta-button">Get a Quote</a>
+      </div>
+    </header>
+
+    <section class="intro-section">
+      <div class="container">
+        <h2>Perfect for Your Events, Parties, and Corporate Gatherings!</h2>
+        <p>
+          At Shrek Juices, we offer more than just juice; we bring
+          health, flavor, and energy to your event. Our juices are freshly made
+          with the finest ingredients, designed to cater to a variety of tastes
+          and dietary preferences. Whether it's a business event, wedding
+          reception, or casual party, our juices are the perfect complement to
+          your celebration.
+        </p>
+      </div>
+    </section>
+
+    <section class="menu-section">
+      <div class="container">
+        <h2>Our Juice Menu</h2>
+        <div class="juice-item">
+          <h3>Tropical Twist</h3>
+          <img src="images/tropical twist.jpg" alt="Tropical Twist Juice" />
+          <p>
+            Pineapple, mango, coconut water, and lime — a refreshing tropical
+            blend.
+          </p>
+        </div>
+        <div class="juice-item">
+          <h3>Green Boost</h3>
+          <img src="images/green boost.webp" alt="Green Boost Juice" />
+          <p>
+            Kale, spinach, cucumber, green apple, and lemon — packed with
+            nutrients to boost your energy.
+          </p>
+        </div>
+        <div class="juice-item">
+          <h3>Berry Bliss</h3>
+          <img src="images/berry bliss.jpg" alt="Berry Bliss Juice" />
+          <p>
+            Strawberries, blueberries, raspberries, and mint — a sweet, tangy,
+            and antioxidant-rich combination.
+          </p>
+        </div>
+        <div class="juice-item">
+          <h3>Citrus Burst</h3>
+          <img src="images/Citrus Burst.jpg" alt="Citrus Burst Juice" />
+          <p>
+            Oranges, grapefruits, and lemon — perfect for a vitamin C
+            pick-me-up.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="packages-section">
+      <div class="container">
+        <h2>Custom Catering Packages</h2>
+        <p>
+          We offer customizable catering packages to fit events of all sizes.
+          Choose from our pre-designed options or create your own tailored
+          package. Here's a look at our most popular options:
+        </p>
+        <div class="pricing">
+          <h3>Small Event Package</h3>
+          <ul>
+            <li>Ideal for: Up to 20 guests</li>
+            <li>Includes: 3 juice options, 20 servings</li>
+            <li>Starting at: 8$ per person</li>
+          </ul>
+        </div>
+        <div class="pricing">
+          <h3>Medium Event Package</h3>
+          <ul>
+            <li>Ideal for: 20-50 guests</li>
+            <li>
+              Includes: 5 juice options, 50 servings, with fresh fruit trays and
+              snacks
+            </li>
+            <li>Starting at: $12 per person</li>
+          </ul>
+        </div>
+        <div class="pricing">
+          <h3>Large Event Package</h3>
+          <ul>
+            <li>Ideal for: 50+ guests</li>
+            <li>
+              Includes: Full juice bar service, unlimited refills, 8+ juice
+              options, and custom add-ons
+            </li>
+            <li>Starting at: $15 per person</li>
+          </ul>
+        </div>
+        <p>
+          Don't see exactly what you're looking for? Contact us for custom
+          packages and pricing.
+        </p>
+      </div>
+    </section>
+
+    <section class="testimonial-section">
+      <div class="container">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">
+          <p>
+            “The juice bar at our wedding was a hit! Everyone loved the fresh
+            options, and it was a fun, interactive experience. We can't wait to
+            use your services again!”
+          </p>
+          <p><strong>Muhammad Haroon</strong></p>
+        </div>
+        <div class="testimonial">
+          <p>
+            “Our corporate event was elevated by your delicious and vibrant
+            juices. Great quality and fantastic service — thank you for making
+            our day extra special!”
+          </p>
+          <p><strong>Muhammad Subhan</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="get-quote" class="form-container">
+      <div class="container">
+        <h2>Book Your Juice Catering Today!</h2>
+        <form id="booking-form">
+          <div class="form-group">
+            <label for="event-date">Event Date:</label>
+            <input type="date" id="event-date" name="event-date" required />
+          </div>
+          <div class="form-group">
+            <label for="event-size">Event Size:</label>
+            <input type="number" id="event-size" name="event-size" required />
+          </div>
+          <div class="form-group">
+            <label for="juice-preferences">Juice Preferences:</label>
+            <select id="juice-preferences" name="juice-preferences">
+              <option value="tropical-twist">Tropical Twist</option>
+              <option value="green-boost">Green Boost</option>
+              <option value="berry-bliss">Berry Bliss</option>
+              <option value="citrus-burst">Citrus Burst</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="additional-requests">Additional Requests/Notes:</label>
+            <textarea
+              id="additional-requests"
+              name="additional-requests"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Your Phone Number:</label>
+            <input type="tel" id="phone" name="phone" />
+          </div>
+          <button type="submit" class="cta-button">Submit Inquiry</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Shrek Juices. All rights reserved.</p>
+        <p>
+          Follow us on
+          <a href="https://www.instagram.com" target="_blank">Instagram</a> and
+          <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        </p>
+      </div>
+    </footer>
+
+    <script>
+              document.getElementById('booking-form').addEventListener('submit', function (e) {
+          e.preventDefault();
+          alert('Your catering request has been received! We will get back to you shortly.');
+      });
+    </script>
+  </body>
+</html>
